@@ -7,11 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040087EF24D4CC1200B6D20A /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A498A324CFA781002B30B2 /* SDL2_image.framework */; };
+		040087F024D4CC1200B6D20A /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04A498A324CFA781002B30B2 /* SDL2_image.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		040087F224D4CC2000B6D20A /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A498A624CFA95E002B30B2 /* SDL2_mixer.framework */; };
+		040087F324D4CC2000B6D20A /* SDL2_mixer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04A498A624CFA95E002B30B2 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		040087F424D4CC2100B6D20A /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045326D62479F8C5005C440D /* SDL2.framework */; };
+		040087F524D4CC2100B6D20A /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 045326D62479F8C5005C440D /* SDL2.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0441861E24B3EAE300243114 /* LTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0441861524B3CE0F00243114 /* LTexture.cpp */; };
 		045326CF2479F8AE005C440D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045326CE2479F8AE005C440D /* main.cpp */; };
+		049BB4E224D73081008D73A7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045326CE2479F8AE005C440D /* main.cpp */; };
+		049BB4E324D73086008D73A7 /* LTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0441861524B3CE0F00243114 /* LTexture.cpp */; };
+		049BB4E424D7309D008D73A7 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A498A324CFA781002B30B2 /* SDL2_image.framework */; };
+		049BB4E524D7309D008D73A7 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A498A624CFA95E002B30B2 /* SDL2_mixer.framework */; };
+		049BB4E624D730A7008D73A7 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045326D62479F8C5005C440D /* SDL2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		040087F124D4CC1200B6D20A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				040087F524D4CC2100B6D20A /* SDL2.framework in Embed Frameworks */,
+				040087F024D4CC1200B6D20A /* SDL2_image.framework in Embed Frameworks */,
+				040087F324D4CC2000B6D20A /* SDL2_mixer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		045326C92479F8AE005C440D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		049BB4C924D72E64008D73A7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,8 +57,41 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		040EF5CE2480955F009CF1A0 /* basketball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basketball.png; sourceTree = "<group>"; };
+		0414BDF1247EA80700F41BB6 /* viewport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viewport.png; sourceTree = "<group>"; };
+		0414BDF2247EAE8D00F41BB6 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		0414BDF3247EAE9200F41BB6 /* foo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foo.png; sourceTree = "<group>"; };
+		0414BDF4247EB4C600F41BB6 /* dots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dots.png; sourceTree = "<group>"; };
+		0414BDF5247EBC6800F41BB6 /* dot.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = dot.bmp; sourceTree = "<group>"; };
+		0414BDF6247EC0F200F41BB6 /* rim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rim.png; sourceTree = "<group>"; };
+		0441860F24B3C85C00243114 /* Ball.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Ball.cpp; sourceTree = "<group>"; };
+		0441861024B3C85C00243114 /* Ball.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Ball.hpp; sourceTree = "<group>"; };
+		0441861524B3CE0F00243114 /* LTexture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LTexture.cpp; sourceTree = "<group>"; };
+		0441861624B3CE0F00243114 /* LTexture.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LTexture.hpp; sourceTree = "<group>"; };
+		0441861824B3D21F00243114 /* LTimer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LTimer.cpp; sourceTree = "<group>"; };
+		0441861924B3D21F00243114 /* LTimer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LTimer.hpp; sourceTree = "<group>"; };
+		0441861D24B3E89F00243114 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		045326CB2479F8AE005C440D /* SDL_tutorial */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SDL_tutorial; sourceTree = BUILT_PRODUCTS_DIR; };
 		045326CE2479F8AE005C440D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		045326D62479F8C5005C440D /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		046231A3247C875C0085CD80 /* down.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = down.bmp; sourceTree = "<group>"; };
+		046231A4247C875D0085CD80 /* right.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = right.bmp; sourceTree = "<group>"; };
+		046231A5247C875D0085CD80 /* left.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = left.bmp; sourceTree = "<group>"; };
+		046231A6247C875D0085CD80 /* up.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = up.bmp; sourceTree = "<group>"; };
+		046231A7247C875D0085CD80 /* press.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = press.bmp; sourceTree = "<group>"; };
+		046231A8247C875D0085CD80 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		04886DA224ABAE7C0043351A /* arm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arm.png; sourceTree = "<group>"; };
+		0498AEEC24AD5C7600EF8E46 /* Hoop.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Hoop.cpp; sourceTree = "<group>"; };
+		0498AEED24AD5C7600EF8E46 /* Hoop.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Hoop.hpp; sourceTree = "<group>"; };
+		049BB4CB24D72E64008D73A7 /* SDL_client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SDL_client; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A498A324CFA781002B30B2 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		04A498A624CFA95E002B30B2 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
+		04A64BF82479FC32004E3858 /* hello_world.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = hello_world.bmp; path = Images/hello_world.bmp; sourceTree = SOURCE_ROOT; };
+		04D1AEBC247D5F62009DD091 /* stretch.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = stretch.bmp; sourceTree = "<group>"; };
+		04D1AEC3247D6A64009DD091 /* loaded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loaded.png; sourceTree = "<group>"; };
+		04D1AEC4247D6B8C009DD091 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
+		04F1842A24914A1F006F23D1 /* Rim.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rim.cpp; sourceTree = "<group>"; };
+		04F1842B24914A1F006F23D1 /* Rim.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rim.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +99,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040087F424D4CC2100B6D20A /* SDL2.framework in Frameworks */,
+				040087F224D4CC2000B6D20A /* SDL2_mixer.framework in Frameworks */,
+				040087EF24D4CC1200B6D20A /* SDL2_image.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049BB4C824D72E64008D73A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049BB4E624D730A7008D73A7 /* SDL2.framework in Frameworks */,
+				049BB4E424D7309D008D73A7 /* SDL2_image.framework in Frameworks */,
+				049BB4E524D7309D008D73A7 /* SDL2_mixer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0441861224B3CB0500243114 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0441861D24B3E89F00243114 /* Constants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		045326C22479F8AE005C440D = {
 			isa = PBXGroup;
 			children = (
+				0441861224B3CB0500243114 /* Constants */,
+				04A64BF72479FBF8004E3858 /* Images */,
 				045326CD2479F8AE005C440D /* SDL_tutorial */,
 				045326CC2479F8AE005C440D /* Products */,
+				045326D52479F8C5005C440D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				045326CB2479F8AE005C440D /* SDL_tutorial */,
+				049BB4CB24D72E64008D73A7 /* SDL_client */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +150,53 @@
 			isa = PBXGroup;
 			children = (
 				045326CE2479F8AE005C440D /* main.cpp */,
+				04F1842A24914A1F006F23D1 /* Rim.cpp */,
+				04F1842B24914A1F006F23D1 /* Rim.hpp */,
+				0498AEEC24AD5C7600EF8E46 /* Hoop.cpp */,
+				0498AEED24AD5C7600EF8E46 /* Hoop.hpp */,
+				0441860F24B3C85C00243114 /* Ball.cpp */,
+				0441861024B3C85C00243114 /* Ball.hpp */,
+				0441861524B3CE0F00243114 /* LTexture.cpp */,
+				0441861624B3CE0F00243114 /* LTexture.hpp */,
+				0441861824B3D21F00243114 /* LTimer.cpp */,
+				0441861924B3D21F00243114 /* LTimer.hpp */,
 			);
 			path = SDL_tutorial;
+			sourceTree = "<group>";
+		};
+		045326D52479F8C5005C440D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04A498A624CFA95E002B30B2 /* SDL2_mixer.framework */,
+				04A498A324CFA781002B30B2 /* SDL2_image.framework */,
+				045326D62479F8C5005C440D /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04A64BF72479FBF8004E3858 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				04886DA224ABAE7C0043351A /* arm.png */,
+				040EF5CE2480955F009CF1A0 /* basketball.png */,
+				0414BDF6247EC0F200F41BB6 /* rim.png */,
+				0414BDF5247EBC6800F41BB6 /* dot.bmp */,
+				0414BDF4247EB4C600F41BB6 /* dots.png */,
+				0414BDF3247EAE9200F41BB6 /* foo.png */,
+				0414BDF2247EAE8D00F41BB6 /* background.png */,
+				0414BDF1247EA80700F41BB6 /* viewport.png */,
+				04D1AEC4247D6B8C009DD091 /* texture.png */,
+				04D1AEC3247D6A64009DD091 /* loaded.png */,
+				04D1AEBC247D5F62009DD091 /* stretch.bmp */,
+				046231A3247C875C0085CD80 /* down.bmp */,
+				046231A5247C875D0085CD80 /* left.bmp */,
+				046231A7247C875D0085CD80 /* press.bmp */,
+				046231A8247C875D0085CD80 /* readme.txt */,
+				046231A4247C875D0085CD80 /* right.bmp */,
+				046231A6247C875D0085CD80 /* up.bmp */,
+				04A64BF82479FC32004E3858 /* hello_world.bmp */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +209,7 @@
 				045326C72479F8AE005C440D /* Sources */,
 				045326C82479F8AE005C440D /* Frameworks */,
 				045326C92479F8AE005C440D /* CopyFiles */,
+				040087F124D4CC1200B6D20A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -82,17 +220,37 @@
 			productReference = 045326CB2479F8AE005C440D /* SDL_tutorial */;
 			productType = "com.apple.product-type.tool";
 		};
+		049BB4CA24D72E64008D73A7 /* SDL_client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049BB4CF24D72E64008D73A7 /* Build configuration list for PBXNativeTarget "SDL_client" */;
+			buildPhases = (
+				049BB4C724D72E64008D73A7 /* Sources */,
+				049BB4C824D72E64008D73A7 /* Frameworks */,
+				049BB4C924D72E64008D73A7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDL_client;
+			productName = SDL_client;
+			productReference = 049BB4CB24D72E64008D73A7 /* SDL_client */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		045326C32479F8AE005C440D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = SDL_tutorial;
 				TargetAttributes = {
 					045326CA2479F8AE005C440D = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					049BB4CA24D72E64008D73A7 = {
+						CreatedOnToolsVersion = 11.6;
 					};
 				};
 			};
@@ -110,6 +268,7 @@
 			projectRoot = "";
 			targets = (
 				045326CA2479F8AE005C440D /* SDL_tutorial */,
+				049BB4CA24D72E64008D73A7 /* SDL_client */,
 			);
 		};
 /* End PBXProject section */
@@ -119,7 +278,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0441861E24B3EAE300243114 /* LTexture.cpp in Sources */,
 				045326CF2479F8AE005C440D /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049BB4C724D72E64008D73A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049BB4E324D73086008D73A7 /* LTexture.cpp in Sources */,
+				049BB4E224D73081008D73A7 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +407,22 @@
 		045326D32479F8AE005C440D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				COPY_HEADERS_RUN_UNIFDEF = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_NO_COMMON_BLOCKS = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					/Library/Frameworks/SDL2_image.framework/Headers,
+					/Library/Frameworks/SDL2_mixer.framework/Headers,
+					/Library/Frameworks/SDL2.framework/Headers,
+				);
+				NEW_SETTING = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -246,7 +430,51 @@
 		045326D42479F8AE005C440D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				COPY_HEADERS_RUN_UNIFDEF = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_NO_COMMON_BLOCKS = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					/Library/Frameworks/SDL2_mixer.framework/Headers,
+					/Library/Frameworks/SDL2.framework/Headers,
+					/Library/Frameworks/SDL2_image.framework/Headers,
+				);
+				NEW_SETTING = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		049BB4D024D72E64008D73A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					/Library/Frameworks/SDL2_image.framework/Headers,
+					/Library/Frameworks/SDL2.framework/Headers,
+					/Library/Frameworks/SDL2_mixer.framework/Headers,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		049BB4D124D72E64008D73A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -268,6 +496,15 @@
 			buildConfigurations = (
 				045326D32479F8AE005C440D /* Debug */,
 				045326D42479F8AE005C440D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049BB4CF24D72E64008D73A7 /* Build configuration list for PBXNativeTarget "SDL_client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049BB4D024D72E64008D73A7 /* Debug */,
+				049BB4D124D72E64008D73A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
